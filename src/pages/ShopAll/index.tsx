@@ -55,7 +55,7 @@ export const Shop = () =>{
     }
 
     const totalCart = coffeeItem.reduce((total, current) =>{
-        return total + (parseInt(`${current.product.price}`) * parseInt(`${current.quantity}`))
+        return total + (parseFloat(`${current.product.price.toFixed(2)}`) * parseFloat(`${current.quantity.toFixed(2)}`))
     }, 0)
 
 
@@ -88,16 +88,16 @@ export const Shop = () =>{
                     {totalCart === 0 && <div className='choice_text'>Choose a flavor</div>}
                         <div>
                             {coffeeItem.map(item =>(
-                                <div >
+                                <div key={item.product.id}>
                                     <h3>Flavour: {item.product.name}</h3>
                                     <p>Price: {item.product.price}$</p>
                                     <p>Quantity: {item.quantity}</p>
-                                    <p>Total: {parseInt(`${item.quantity}`) * parseInt(`${item.product.price}`)}$</p>
+                                    <p>Total: {parseFloat(`${item.quantity.toFixed(2)}`) * parseFloat(`${item.product.price.toFixed(2)}`)}$</p>
                                     <button onClick={() => removeFlavour(item.product.id)} className='btn_remove' >Remove</button>
                                 </div>
                             ))}
                         </div>
-                        <h4> Total Order: ({(totalCart)}$)</h4>
+                        <h4> Total Order: ({(totalCart.toFixed(2))}$)</h4>
                     {totalCart > 0 && <button className='buy_button'>Buy</button>}
             </X.FlavourOrder>
         </X.ShopContainer>
