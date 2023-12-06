@@ -80,11 +80,16 @@ export const BannerText = styled.div`
 
     @media(max-width: 391px){
         h1{
-            font-size: 25px;
+            font-size: 27px;
         }
 
         h2{
             font-size: 15px;
+        }
+        
+        a{
+            padding: 10px 15px;
+            font-size: 12px;
         }
     }
 
@@ -419,8 +424,8 @@ export const FlavorCards = styled.div`
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        padding: 20px 20px 50px 20px;  
-        margin-bottom: 20px;
+        padding: 20px 20px 50px 20px;
+        margin-bottom: 20px;  
 
         button{
             width: 50%;
@@ -442,7 +447,7 @@ export const FlavorCards = styled.div`
             color: #c5c5c5;
         }
     }
-
+        
     .swiper-slide{
         cursor: pointer;
     }

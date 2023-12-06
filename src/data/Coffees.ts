@@ -10,7 +10,7 @@ export const CoffeeFlavors: Coffees[]  = [
     {id: 4, name: 'Pitch Black', url: Coffee1, price: 15.99},
     {id: 5, name: 'Covert Op Cold', url: Coffee3, price: 17.99},
     {id: 6, name: 'Low Voltage Decaf', url: Coffee2, price: 18.99},
-    {id: 7, name: 'Mega Awakening', url: Coffee3, price: 20.99},
-    {id: 7, name: 'High Voltage Decaf', url: Coffee2, price: 20.99},
-    {id: 7, name: 'Night Cafe', url: Coffee1, price: 20.99}
+    {id: 8, name: 'Mega Awakening', url: Coffee3, price: 20.99},
+    {id: 9, name: 'High Voltage Decaf', url: Coffee2, price: 20.99},
+    {id: 10, name: 'Night Cafe', url: Coffee1, price: 20.99}
 ]

@@ -5,9 +5,10 @@ import { ShopCoffeeItem } from '../Home'
 
 export const Shop = () =>{
     const [inputValue, setInputValue] = useState('')
+    const [coffeeItem, setCoffeeItem] = useState<ShopCoffeeItem[]>([])
+
     const lowerBusca = inputValue.toLowerCase()
     const coffeeFiltered = CoffeeFlavors.filter(item => item.name.toLowerCase().includes(lowerBusca))
-    const [coffeeItem, setCoffeeItem] = useState<ShopCoffeeItem[]>([])
 
     const addFlavour = (id: number) =>{
         const CoffeeFlavour = CoffeeFlavors.find((CoffeeFlavour) => CoffeeFlavour.id === id)
