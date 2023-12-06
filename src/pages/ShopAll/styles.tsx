@@ -40,7 +40,7 @@ export const ShopContent = styled.div`
         justify-content: center;
         flex-direction: column;
         background-color: #FFF;
-        border-radius: 5px;
+        border-radius: 10px;
         padding: 20px 50px;
         cursor: pointer;
         box-shadow: 10px 10px 20px #c5c5c5;
@@ -101,8 +101,8 @@ export const FlavourOrder = styled.div`
     justify-content: center;
     flex-direction: column;
     background-color: #FFF;
-    padding: 20px 30px;
-    border-radius: 5px;
+    padding: 20px 25px;
+    border-radius: 10px;
     box-shadow: 10px 10px 20px #c5c5c5;
 
     div{

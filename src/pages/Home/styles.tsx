@@ -47,7 +47,6 @@ export const BannerText = styled.div`
         border: none;
         border-radius: 50px;
         padding: 10px 20px;
-        margin-top: 30px;
         cursor: pointer;
         color: #221C1E;
         text-transform: uppercase;
@@ -66,6 +65,32 @@ export const BannerText = styled.div`
     @media(max-width: 845px){
         a{
             width: 100%;
+        }
+    }
+
+    @media(max-width: 425px){
+        h1{
+            font-size: 30px;
+        }
+
+        h2{
+            font-size: 20px;
+        }
+    }
+
+    @media(max-width: 391px){
+        h1{
+            font-size: 25px;
+        }
+
+        h2{
+            font-size: 15px;
+        }
+    }
+
+    @media(max-width: 320px){
+        h1{
+            font-size: 24px;
         }
     }
 `
@@ -193,6 +218,7 @@ export const ServicesContent = styled.div`
         justify-content: center;
         flex-direction: column;
         margin: 20px;
+        width: 100%;
     }
 
     .geometric{
@@ -216,7 +242,8 @@ export const ServicesContent = styled.div`
         margin: 10px 20px 0 20px;
         padding: 30px 20px 60px 20px;
         width: 100%;
-        border-radius: 5px;
+        border-radius: 10px;
+        box-shadow: 17px 7px 25px #000;
     }
 
 
@@ -393,6 +420,7 @@ export const FlavorCards = styled.div`
         justify-content: center;
         flex-direction: column;
         padding: 20px 20px 50px 20px;  
+        margin-bottom: 20px;
 
         button{
             width: 50%;
@@ -413,7 +441,8 @@ export const FlavorCards = styled.div`
             background-color: #221C1E;
             color: #c5c5c5;
         }
-    }    
+    }
+
     .swiper-slide{
         cursor: pointer;
     }
@@ -427,11 +456,6 @@ export const FlavorCards = styled.div`
 
     .swiper-pagination-bullet-active{
         background-color: #221C1E;
-    }
-
-    .swiper-button-prev,
-    .swiper-button-next{
-        color: #000;
     }
 
     img{
@@ -463,7 +487,7 @@ export const FlavorCardsP2 = styled.div`
         justify-content: center;
         flex-direction: column;
         background-color: #FFF;
-        border-radius: 5px;
+        border-radius: 10px;
         padding: 20px;
         cursor: pointer;
         box-shadow: 10px 10px 20px #c5c5c5;
@@ -518,7 +542,7 @@ export const FlavorOrder = styled.div`
     flex-direction: column;
     background-color: #FFF;
     padding: 20px 30px;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 10px 10px 20px #c5c5c5;
     
     div{
